@@ -1,7 +1,7 @@
 # GaleroouleAi <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
 <p align= "center">
-<img src="https://github.com/JuniorTorresMTJ/GaleroouleAi/blob/main/front/src/assets/Bulb.png" min-width="300px" max-width="200px" width="100px" > 
+<img src="https://github.com/JuniorTorresMTJ/GaleroouleAi/blob/main/front/src/assets/nome.png" min-width="300px" max-width="200px" width="400px" > 
 </p>
 
 ## Site do Projeto <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
