@@ -25,6 +25,10 @@ A falta de capacidade para analisar, entender e responder a consultas em linguag
 
 O nome "GaleroouleAI" é um portmanteau, uma combinação das palavras "Google" e "Alura". Isso significa que o nome foi criado ao mesclar partes dessas duas palavras, refletindo a inspiração ou a colaboração entre as duas entidades ou conceitos representados por elas. No contexto de um projeto ou produto, isso sugere que a tecnologia ou metodologia usada pode ter sido influenciada ou apoiada pelas capacidades e ferramentas do Google, bem como pelos recursos educacionais ou de desenvolvimento da Alura. Esse tipo de nome ajuda a transmitir a essência da colaboração ou da fusão de ideias e tecnologias de ambas as origens.
 
+<p align= "center">
+<img src="https://media2.giphy.com/media/jY1r8EHyk4Ye9KUOUb/giphy.gif" min-width="300px" max-width="200px" width="100px" > 
+</p>
+***
 ## Arquitetura <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 A arquitetura Retrieval-Augmented Generation (RAG) no projeto utiliza recuperação de documentos e geração de texto para respostas precisas. Usando o modelo de Embedding da Google para encontrar informações e a Gemini AI para gerar respostas, o sistema melhora a precisão e eficiência. Python e Langchain facilitam a integração, enquanto React e Tailwind melhoram a interface do usuário.
 
@@ -37,6 +41,10 @@ A arquitetura Retrieval-Augmented Generation (RAG) no projeto utiliza recuperaç
 - **Langchain**: Descreva a integração com Langchain e seu papel no projeto.
 - **React**: Detalhe como o React é usado para construir a interface do usuário.
 - **Tailwind CSS**: Explique como o Tailwind é utilizado para o design do frontend.
+
+<p align= "center">
+<img src="https://media2.giphy.com/media/L8INOStdmfSw0gWjJI/giphy.gif" min-width="300px" max-width="200px" width="100px" > 
+</p>
 ***
 ## Funcionalidades <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
@@ -60,5 +68,9 @@ npm start
 
 # Comando para rodar o backend/API
 python app.py
+```
+<p align= "center">
+<img src="https://media2.giphy.com/media/1XtSruWop7KxJKcYtQ/giphy.gif" min-width="300px" max-width="200px" width="100px" > 
+</p>
 
 ***
