@@ -30,13 +30,13 @@ const Nav = () => {
               activeClass="active"
               smooth={true}
               spy={true}
-              className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF] transition-all duration-300 group relative"
+              className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#034460] transition-all duration-300 group relative"
             >
               <HiHome />
             </Link>
           </Tooltip>
           <Tooltip
-            content="About Us"
+            content="Sobre Nós"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -49,13 +49,13 @@ const Nav = () => {
             spy={true}
             data-tooltip-target="tooltip-left"
             data-tooltip-placement="left"
-            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]"
+            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#034460]"
           >
             <BiSolidInfoSquare />
           </Link>
           </Tooltip>
           <Tooltip
-            content="Services"
+            content="Serviços"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -66,13 +66,13 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]"
+            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#034460]"
           >
             <BsFillBarChartFill />
           </Link>
           </Tooltip>
           <Tooltip
-            content="Tecnologies"
+            content="Tecnologias"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -83,13 +83,13 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]"
+            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#034460]"
           >
             <HiMiniCodeBracket />
           </Link>
           </Tooltip>
           <Tooltip
-            content="Team"
+            content="Equipe"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -100,13 +100,13 @@ const Nav = () => {
             activeClass="active"
             smooth={true}
             spy={true}
-            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]"
+            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#034460]"
           >
             <HiMiniUsers />
           </Link>
           </Tooltip>
           <Tooltip
-            content="Contact"
+            content="Contatos"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -118,7 +118,7 @@ const Nav = () => {
             smooth={true}
             spy={true}
             offset={-10}
-            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#D55EFF]"
+            className="cursor-pointer w-[50px] h-[50px] flex items-center justify-center hover:text-[#034460]"
           >
             <MdEmail />
           </Link>

@@ -27,25 +27,24 @@ const About = () => {
             className="flex-1"
           >
             <h2 className=" h2  text-accent font-semibold">
-              Sobre mim<span className="text-white ml-0 pl-0">_</span>
+              Sobre nós<span className="text-white ml-0 pl-0">_</span>
             </h2>
             <h3 className=" h3-responsive mb-1 lg:h3">
-              We are a Data company with projects across the US, Europe and
-              South America!
+              Somos uma IA que facilitará a sua vida e de sua empresa!
             </h3>
             <p className="mb-6 text-lg lg:font-secondary lg:leading-8 ">
-              We possess expertise in various domains including Artificial
-              Intelligence, Data Engineering, Data Science, MLOps, Large
-              Language Models, Data Analytics, among others!
+              Possuímos expertise em diversos domínios, incluindo Inteligência
+              Artificial, Ciência de Dados, MLOps, Modelos de Linguagem de
+              Grande Escala (LLM), Análise de Dados, entre outros!
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-4 lg:mb-12 lg:justify-center h-fit">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient h-fit">
-                  +{inView ? <CountUp start={0} end={13} duration={3} /> : null}
+                  +{inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px] py-2">
-                  Years of <br />
-                  Experience
+                  Anos de <br />
+                  Experiência
                 </div>
               </div>
               <div>
@@ -54,16 +53,15 @@ const About = () => {
                   {inView ? <CountUp start={0} end={100} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]  py-2">
-                  Millions in Revenue <br />
-                  for our Clients
+                  Milhões de Receita <br />
                 </div>
               </div>
               <div>
                 <div className="text-[40px] font-tertiary text-gradient h-fit">
-                  +{inView ? <CountUp start={0} end={12} duration={3} /> : null}
+                  +{inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]  py-2">
-                  Companies
+                  Empresas
                   <br />
                 </div>
               </div>
@@ -72,7 +70,7 @@ const About = () => {
               <Link smooth={true} to="contact" spy={true}>
                 <button className="btn btn-lg rounded-lg  max-w-[170px] animate-ping px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                    Contact US
+                    Usar IA
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
@@ -93,11 +91,13 @@ const About = () => {
 
               <div className="mr-5">
                 <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">
-                  International Experience
+                  Eficiência Operacional
                 </div>
                 <div className=" text-white text-opacity-70 text-base font-normal">
-                  We have collaborated with prestigious companies such as
-                  PokerStars, Shopee, Bradesco, Ipiranga, among many others.
+                  A IA aumenta a produtividade ao automatizar tarefas e
+                  processos repetitivos, reduzindo erros e liberando tempo para
+                  atividades de maior valor agregado. Isso se traduz em
+                  operações mais rápidas e eficientes em diversos setores.
                 </div>
               </div>
             </div>
@@ -108,13 +108,14 @@ const About = () => {
 
               <div className="mr-5">
                 <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">
-                  State-of-the-art solutions
+                  Personalização e Experiência do Usuário
                 </div>
                 <div className=" text-white text-opacity-70 text-base font-normal">
-                  Our expertise in virtually all fields of data positions us as
-                  one of the few who can deliver top-quality solutions in every
-                  area. Need a chatbot? No worries—we can develop both the
-                  backend and the frontend. We've got you covered!
+                  Utilizando análise de comportamento, a IA personaliza
+                  recomendações e serviços, melhorando significativamente a
+                  experiência do usuário. Isso não só aumenta a satisfação e
+                  fidelidade do cliente, como também impulsiona vendas e
+                  engajamento.
                 </div>
               </div>
             </div>
@@ -125,13 +126,13 @@ const About = () => {
 
               <div className="mr-5">
                 <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">
-                  100% Secured
+                  Insights e Tomada de Decisão Aprimorada
                 </div>
                 <div className="text-white text-opacity-70 text-base font-normal">
-                  We are committed to delivering outstanding results in the best
-                  way possible. If you're not completely satisfied, we offer a
-                  100% money-back guarantee. This is a testament to the supreme
-                  confidence we have in our capabilities.
+                  Com a capacidade de processar e analisar grandes volumes de
+                  dados, a IA oferece insights profundos que apoiam decisões
+                  estratégicas, ajudando empresas a antecipar tendências e
+                  otimizar operações com base em informações precisas.
                 </div>
               </div>
             </div>

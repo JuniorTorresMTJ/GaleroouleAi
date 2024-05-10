@@ -19,14 +19,13 @@ const Tecnologies = () => {
         viewport={{ once: false, amount: 0.3 }}
         className="flex items-center justify-center lg:w-1/2 ">
           <div className="flex-1  items-center justify-center p-5">
-          <h2 className=" h2  text-accent font-semibold">We Know<span className="text-white ml-0 pl-0">.</span></h2>
+          <h2 className=" h2  text-accent font-semibold">O que sabemos<span className="text-white ml-0 pl-0">_</span></h2>
             <h3 className=" h3-responsive lg:h3 mb-4 ">
-            At InfinityAI, we're driven by innovation and powered by cutting-edge technologies. 
-            With expertise in the most diverse software development technologies, we are on a mission 
-            to revolutionize industries and empower businesses to thrive in the data-driven era.
+            Somos movidos pela inovação e impulsionados por tecnologias de ponta. Com expertise nas mais diversas tecnologias de desenvolvimento de software, estamos em uma missão para revolucionar indústrias e capacitar empresas a prosperar na era orientada por dados.
             </h3>
             <p className="mb-6">
-            Our technology stack is more than just the sum of its parts. With our passion for innovation, ensures that we are always pushing boundaries and exploring new horizons.            </p>
+            
+Nossa stack de tecnologias é mais do que apenas a soma de suas partes. Com nossa paixão por inovação, garantimos que estamos sempre ultrapassando limites e explorando novos horizontes.            </p>
           </div>
         </motion.div>
         <motion.div

@@ -19,10 +19,7 @@ import DE from "../assets/DE.png";
 
 const Services = () => {
   return (
-    <section
-      id="services"
-      className="flex items-center  w-full h-screen "
-    >
+    <section id="services" className="flex items-center  w-full h-screen ">
       <div className="container mx-auto my-auto  w-full h-screen  ">
         <div className=" flex flex-col m-2 mb-10  lg:bg-opacity-5 ">
           <motion.div
@@ -33,10 +30,10 @@ const Services = () => {
             className=" flex-1   lg:mb-0 "
           >
             <h2 className="h2 text-accent font-semibold m-5 ml-0">
-              What We Do<span className="text-white ml-0 pl-0">.</span>
+              O que fazemos<span className="text-white ml-0 pl-0">_</span>
             </h2>
             <h3 className="leading-tight lg:mb-10 mb-2 mr-3 pr-2">
-              These are the services that we offer!
+              Aqui estão as possibilidades com nossa IA!
             </h3>
             {/* <a href="https://www.linkedin.com/in/marivaldotorres/" target="_blank" ><button className='btn btn-lg rounded-lg'  >See my work</button></a> */}
           </motion.div>
@@ -91,15 +88,15 @@ const Services = () => {
                       />
                     </div>
                     <div className=" text-lg text-gradient text-center tracking-wider  font-semibold  capitalize leading-normal ">
-                      Artificial Intelligence
+                      Analisar
                     </div>
                     <p className="font-secondary leading-tight  text-center pt-2 lg:p-3">
-                      Unlock the potential of large language models with our
-                      tailored solutions, catering to various applications such
-                      as model fine-tuning, text generation, chatbots, etc. We
-                      equip your business with advanced tools for sentiment
-                      analysis, entity linking, and chatbots, continuously
-                      innovating to meet and exceed your expectations.
+                      Aumente a eficácia da sua tomada de decisões com nossos
+                      serviços avançados de análise de PDF. Utilizando técnicas
+                      de ponta, oferecemos insights profundos e precisos
+                      extraídos diretamente dos seus documentos. Nossa abordagem
+                      permite uma compreensão ampla do conteúdo, otimizando
+                      processos e promovendo um ambiente orientado por dados.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -115,16 +112,15 @@ const Services = () => {
                       />
                     </div>
                     <div className="text-gradient text-lg text-center tracking-wider  font-semibold  capitalize leading-normal ">
-                      Data Science
+                      Extrair
                     </div>
                     <p className="font-secondary leading-tight text-center pt-2 lg:p-3">
-                      Dive into the forefront of technology with our expert
-                      services in crafting and deploying Machine and Deep
-                      Learning models. We excel in diverse scenarios including
-                      time series forecasting, recommendation systems, anomaly
-                      detection, and churn prediction, offering adept solutions
-                      in customer segmentation and more, driving your business
-                      forward with data-driven strategies.
+                      Libere o potencial dos seus documentos com nosso serviço
+                      de extração de dados de PDFs. Extraímos informações
+                      cruciais automaticamente, economizando tempo e reduzindo
+                      erros humanos. Ideal para ambientes corporativos que lidam
+                      com grandes volumes de dados, facilitando a acessibilidade
+                      e a utilização das informações contidas nos documentos.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -140,16 +136,15 @@ const Services = () => {
                       />
                     </div>
                     <div className="text-gradient text-lg text-center tracking-wider  font-semibold  capitalize leading-normal ">
-                      Machine Learning Engineering
+                      Sumarizar
                     </div>
                     <p className="font-secondary leading-tight text-center pt-2 lg:p-3">
-                      Embark on a seamless journey of model deployment with our
-                      expert MLOps services, upholding the industry's best
-                      practices. Our team excels in building resilient CI/CD
-                      pipelines and conducting comprehensive unit and
-                      integration tests. Leveraging our extensive experience
-                      with platforms like AWS, GCP, and Azure, we ensure your
-                      projects thrive with leading-edge technology.
+                      Transforme documentos extensos em resumos concisos com
+                      nosso serviço de sumarização de PDF. Perfeito para
+                      profissionais que precisam assimilar informações
+                      rapidamente, nosso método destaca pontos-chave e
+                      informações essenciais, permitindo uma revisão eficiente
+                      sem a necessidade de ler o documento inteiro.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -165,14 +160,16 @@ const Services = () => {
                       />
                     </div>
                     <div className="text-gradient text-lg text-center tracking-wider  font-semibold  capitalize leading-normal ">
-                      MLOps
+                      Buscar
                     </div>
                     <p className="font-secondary leading-tight text-center pt-2 lg:p-3">
-                      Experience seamless integration of the best MLOps
-                      practices into your platform with our adept team. We
-                      enhance your system with features like model monitoring,
-                      automatic retraining, and model versioning, fostering
-                      efficiency, accuracy, and innovation in your operations.
+                      Revolucione como você encontra informações com nosso
+                      serviço de busca em PDF. Localize instantaneamente
+                      qualquer dado ou texto dentro de uma vasta coleção de
+                      documentos, melhorando significativamente a eficiência
+                      operacional. Ideal para setores jurídicos, acadêmicos e de
+                      pesquisa, onde a rapidez na recuperação de informações é
+                      crucial.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -188,14 +185,15 @@ const Services = () => {
                       />
                     </div>
                     <div className="text-gradient text-lg text-center tracking-wider  font-semibold  capitalize leading-normal ">
-                      Data Analytics
+                      Classificar
                     </div>
                     <p className="font-secondary leading-tight text-center pt-2 lg:p-3">
-                      Maximize your data's potential with our expert data
-                      analytics solutions. Implementing industry best practices,
-                      we transform raw data into actionable insights, utilizing
-                      tools such as predictive analytics and data visualization
-                      to enhance your business decision-making process.
+                      Organize seus documentos automaticamente com nossa
+                      ferramenta de classificação de PDF. Utilizando
+                      inteligência artificial, categorizamos seus documentos por
+                      temas, relevância ou qualquer outro critério definido,
+                      simplificando a gestão de arquivos e melhorando a
+                      recuperação de informações.
                     </p>
                   </div>
                 </SwiperSlide>
@@ -211,15 +209,15 @@ const Services = () => {
                       />
                     </div>
                     <div className="text-gradient text-lg  text-center tracking-wider  font-semibold  capitalize leading-normal ">
-                      Data Engineering
+                      Converter
                     </div>
                     <p className="font-secondary leading-tight text-center pt-2 lg:p-3">
-                      Upgrade your data infrastructure with our premium data
-                      engineering services. Following the sector's best
-                      practices, we facilitate seamless data integration,
-                      storage, and management. Our services include real-time
-                      data processing and data warehousing, fostering a
-                      data-driven culture that encourages innovation and growth.
+                      Maximize a compatibilidade dos seus documentos com nosso
+                      serviço de conversão de PDF. Converta documentos de e para
+                      diversos formatos, mantendo a integridade do layout e do
+                      conteúdo. Essencial para empresas que interagem com
+                      diversas plataformas e precisam manter uma consistência
+                      visual e funcional entre documentos.
                     </p>
                   </div>
                 </SwiperSlide>

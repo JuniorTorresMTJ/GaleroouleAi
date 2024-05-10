@@ -28,8 +28,7 @@ const Team = () => {
                 Quem sou eu<span className="text-white ml-0 pl-0">_</span>
               </h2>
               <p className=" mb-10">
-                We are a well-rounded team with over 10 years of experience,
-                specializing in all domains of data.
+                Sou um profissional de dados com mais de 4 anos de experiência.
               </p>
               <a href="" target="_blank">
                 {/* <button className="btn btn-sm mb-2">View all projects</button> */}
@@ -37,14 +36,14 @@ const Team = () => {
             </div>
           </motion.div>
           <div className="flex flex-col lg:flex-row  justify-center items-center  p-1 pb-0">
-            <div className="flex-1 flex flex-col gap-y-2">
+            <div className=" flex flex-col gap-y-2">
               <div className="flex flex-col lg:flex-row lg:h-full gap-y-24 gap-x-5">
                 <motion.div
                   variants={fadeIn("left", 0.6)}
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className=" flex-col  justify-center drop-shadow-lg p-5  lg:w-81 h-94   cursor-pointer  bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow "
+                  className="flex flex-col  justify-center drop-shadow-lg p-5  lg:w-80 h-94   cursor-pointer  bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow "
                 >
                   <div className="rounded-full flex items-center justify-center pb-1">
                     <img
@@ -70,35 +69,13 @@ const Team = () => {
                     </p>
                   </div>
                   <p className="font-secondary leading-tight  text-opacity-70 text-base font-normal text-center p-1">
-                    Machine Learning Engineer with a background in major
-                    companies, skilled in model deployment, Python, SQL,
-                    PySpark, and cloud infrastructures.
+                  Engenheiro de Machine Learning com experiência em grandes empresas, habilidoso em implementação de modelos, Python, SQL, PySpark e infraestruturas em nuvem.
                   </p>
                 </motion.div>
 
               </div>
             </div>
           </div>
-          <motion.div
-            variants={fadeIn("right", 0.20)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.12 }}
-            className=" flex-1 flex flex-col lg:flex-row justify-center lg:py-2 lg:px-5 "
-          >
-            <div className="flex-1 flex flex-row justify-center  items-center lg:flex-row gap-x-5 gap-y-5">
-              <div className="flex  justify-center items-center w-1/2 lg:w-2/4 p-3 ">
-                <img
-                  src={Shopee}
-                  alt="Logo Shopee"
-                  className="w-[100px] lg:w-[150px]"
-                />
-              </div>
-            </div>
-            <div className="flex-1 flex flex-row justify-center  items-center lg:flex-row gap-x-5 gap-y-5">
-
-            </div>
-          </motion.div>
           <motion.div
             variants={fadeIn("right", 0.20)}
             initial="hidden"
@@ -111,6 +88,16 @@ const Team = () => {
                 <img
                   src={Porto}
                   alt="Logo Shopee"
+                  className="w-[100px] lg:w-[150px]"
+                />
+              </div>
+
+            </div>
+            <div className="flex-1 flex flex-row justify-center  items-center lg:flex-row gap-x-5 gap-y-5">
+              <div className="flex  justify-center items-center w-2/4 lg:w-2/4 p-3 ">
+                <img
+                  src={Shopee}
+                  alt="Shopee"
                   className="w-[100px] lg:w-[150px]"
                 />
               </div>

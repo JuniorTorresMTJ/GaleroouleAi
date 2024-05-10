@@ -110,7 +110,7 @@ const Banner = () => {
                 spy={true}
                 smooth={true}
               >
-                Our Services
+                Nossos Serviços
               </Link>
             </motion.div>
           </div>
