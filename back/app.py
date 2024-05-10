@@ -72,8 +72,6 @@ def get_vectorstore(text_chunks):
     
     if vectorstore is None or vectorstore.index.ntotal == 0:
         st.error("Vectorstore está vazio ou não foi criado corretamente.")
-    else:
-        st.info(f"Vectorstore criado com {vectorstore.index.ntotal} vetores.")
     return vectorstore
 
 
@@ -87,7 +85,7 @@ def get_conversation_chain(vectorstore):
     Retorna:
         ConversationalRetrievalChain: Uma cadeia de conversação configurada para usar o armazenamento de vetores e um modelo de IA generativo.
     """
-    llm = ChatGoogleGenerativeAI(model="gemini-pro",
+    llm = ChatGoogleGenerativeAI(model="gemini-1.0-pro",
                              temperature=0.1)
 
     memory = ConversationBufferMemory(
@@ -115,7 +113,7 @@ def get_conversational_chain():
     Answer:
     """
 
-    model = ChatGoogleGenerativeAI(model="gemini-pro",
+    model = ChatGoogleGenerativeAI(model="gemini-1.0-pro",
                              temperature=0.9)
 
     prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
@@ -185,7 +183,7 @@ def main():
         
         st.subheader("🌐 :blue[*Idiomas*]")
         idioma_selecionado = st.radio(
-        "Escolha o idioma do GalerrouleAI:",
+        "Escolha o idioma do GaleroouleAI:",
         options=opcoes_de_idioma,
         index=opcoes_de_idioma.index(idioma_inicial)
         )
@@ -210,7 +208,7 @@ def main():
             st.text("1️⃣ Choose the Language")
             st.text("2️⃣ Upload the PDF(s)")
             st.text("3️⃣ Click on 'Process'")
-            st.text("4️⃣ Ask Questions to GalerrouleAI")
+            st.text("4️⃣ Ask Questions to GaleroouleAI")
 
 
             
@@ -236,16 +234,16 @@ def main():
             st.text("1️⃣ Escolha o Idioma")
             st.text("2️⃣ Carregue o(s) PDF(s)")
             st.text("3️⃣ Clique em Processar")
-            st.text("4️⃣ Faça Perguntas ao GalerrouleAI")
+            st.text("4️⃣ Faça Perguntas ao GaleroouleAI")
             
     if idioma_selecionado == 'EN':        
-        st.header("Welcome to :blue[*GalerrouleAI*] 🤖")
+        st.header("Welcome to :blue[*GaleroouleAI*] 🤖")
         st.write("Your company's chat to ask questions about private documents! 📝")
         user_question = st.text_input("Ask questions about the documents you uploaded:")
         if user_question:
             handle_userinput(user_question)
     else:
-        st.header("Bem Vindo ao :blue[*GalerrouleAI*] 🤖")
+        st.header("Bem Vindo ao :blue[*GaleroouleAI*] 🤖")
         st.write("O chat da sua empresa para tirar dúvidas sobre documentos particulares! 📝")
         user_question = st.text_input("Faça perguntas sobre os documentos que você carregou:")
         if user_question:
