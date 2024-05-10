@@ -67,14 +67,14 @@ const About = () => {
               </div>
             </div>
             <div className=" flex gap-x-8 items-center mr-8 justify-center">
-              <Link smooth={true} to="contact" spy={true}>
+            <a href="https://galeroouleai.streamlit.app" target="_blank" rel="noopener noreferrer">
                 <button className="btn btn-lg rounded-lg  max-w-[170px] animate-ping px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                     Usar IA
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
-              </Link>
+              </a>
             </div>
           </motion.div>
           <motion.div

@@ -95,14 +95,14 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 hover:z-50"
             >
-              <Link smooth={true} to="contact" spy={true}>
+              <a href="https://galeroouleai.streamlit.app" target="_blank" rel="noopener noreferrer">
                 <button className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                     Conhecer
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
-              </Link>
+              </a>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
               <Link
                 className="text-gradient btn-link"
