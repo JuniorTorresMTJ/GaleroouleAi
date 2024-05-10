@@ -17,7 +17,7 @@
 
 ## Descrição <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
-O GaleroouleAi é uma aplicação inovadora que combina tecnologias de ponta em inteligência artificial para oferecer uma solução robusta e interativa em [inserir área de aplicação, por exemplo, "educação", "atendimento ao cliente", "análise de dados", etc.]. Utilizando a LLM Gemini AI da Google, integrada com o modelo de Embedding, nossa aplicação é capaz de entender e processar linguagem natural de maneira eficaz, proporcionando uma interação intuitiva e personalizada para os usuários.
+O GaleroouleAi é uma aplicação inovadora que combina tecnologias de ponta em inteligência artificial para oferecer uma solução robusta e interativa em Análise de Documentos. Utilizando a LLM Gemini AI da Google, integrada com o modelo de Embedding, nossa aplicação é capaz de entender e processar linguagem natural de maneira eficaz, proporcionando uma interação intuitiva e personalizada para os usuários.
 
 Desenvolvido com Python e Langchain, o backend do nosso aplicativo garante uma integração fluida e eficiente com as APIs do Google, permitindo que o sistema não apenas entenda, mas também responda e interaja com os usuários de maneiras contextualmente relevantes. O site do aplicativo, criado com React e estilizado com Tailwind CSS, oferece uma interface de usuário limpa e moderna, facilitando a navegação e melhorando a experiência do usuário.
 
