@@ -78,15 +78,12 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className=" mb-8 max-w-[390px] mx-auto lg:mx-0 lg:max-w-[720px] p-2"
+              className=" mb-6 max-w-[390px] mx-auto lg:mx-0 lg:max-w-[720px] p-2"
             >
-              Bem-vindo ao nossa IA! Aqui, você terá acesso a uma ferramenta
-              revolucionária que permite interagir com documentos PDF de maneira
-              totalmente nova. Descubra nossos serviços exclusivos e explore
-              como temos transformado a maneira de acessar e analisar
-              informações em documentos para nossos clientes ao longo dos
-              últimos anos. Venha conhecer e experimentar a inovação ao seu
-              alcance!
+              Bem-vindo à nossa IA! Explore uma ferramenta inovadora que
+              transforma sua interação com documentos PDF. Conheça nossos
+              serviços únicos que têm revolucionado o acesso e a análise de
+              informações. Experimente a inovação ao seu alcance!
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -95,7 +92,11 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0 hover:z-50"
             >
-              <a href="https://galeroouleai.streamlit.app" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://galeroouleai.streamlit.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <button className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                     Conhecer
