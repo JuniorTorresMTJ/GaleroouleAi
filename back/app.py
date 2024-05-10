@@ -2,23 +2,29 @@ import streamlit as st
 import locale
 import os
 import google.generativeai as genai
-
 from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import FAISS
-from langchain.memory import ConversationBufferMemory
-from langchain.chains import ConversationalRetrievalChain
-from htmlTemplates import css, bot_template, user_template
 from langchain.llms import HuggingFaceHub
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
+from htmlTemplates import css, bot_template, user_template
 
 
 def get_pdf_text(pdf_docs):
+    """
+    Extrai o texto de uma lista de documentos PDF.
+
+    Parâmetros:
+        pdf_docs (list): Uma lista de arquivos PDF dos quais o texto será extraído.
+
+    Retorna:
+        str: Um texto concatenado de todas as páginas de todos os documentos PDF fornecidos.
+    """
     text = ""
     for pdf in pdf_docs:
         pdf_reader = PdfReader(pdf)
@@ -28,6 +34,16 @@ def get_pdf_text(pdf_docs):
 
 
 def get_text_chunks(text):
+    """
+    Divide um texto em blocos, considerando um separador e tamanho de bloco específico.
+
+    Parâmetros:
+        text (str): O texto a ser dividido em blocos.
+
+    Retorna:
+        list: Uma lista de blocos de texto, onde cada bloco tem um tamanho máximo definido,
+              com uma sobreposição especificada entre blocos consecutivos.
+    """
     text_splitter = CharacterTextSplitter(
         separator="\n",
         chunk_size=1000,
@@ -39,9 +55,19 @@ def get_text_chunks(text):
 
 
 def get_vectorstore(text_chunks):
+    """
+    Cria um armazenamento de vetores (vectorstore) com base nos blocos de texto, usando embeddings gerados por um modelo especificado.
+
+    Parâmetros:
+        text_chunks (list): Uma lista de blocos de texto que serão convertidos em embeddings e armazenados.
+
+    Retorna:
+        FAISS: Uma instância de armazenamento de vetores contendo os embeddings dos blocos de texto.
+               Informa também se o armazenamento foi criado corretamente ou não através de mensagens.
+    """
     embeddings = GoogleGenerativeAIEmbeddings(model='models/embedding-001')
 
-    vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings )
+    vectorstore = FAISS.from_texts(texts=text_chunks, embedding=embeddings)
     vectorstore.save_local("faiss_index")
     
     if vectorstore is None or vectorstore.index.ntotal == 0:
@@ -52,7 +78,15 @@ def get_vectorstore(text_chunks):
 
 
 def get_conversation_chain(vectorstore):
+    """
+    Configura uma cadeia de conversação usando um armazenamento de vetores e um modelo de linguagem para recuperação e geração de respostas.
 
+    Parâmetros:
+        vectorstore (FAISS): O armazenamento de vetores que será usado como retriever na cadeia de conversação.
+
+    Retorna:
+        ConversationalRetrievalChain: Uma cadeia de conversação configurada para usar o armazenamento de vetores e um modelo de IA generativo.
+    """
     llm = ChatGoogleGenerativeAI(model="gemini-pro",
                              temperature=0.1)
 
@@ -65,8 +99,14 @@ def get_conversation_chain(vectorstore):
     )
     return conversation_chain
 
-def get_conversational_chain():
 
+def get_conversational_chain():
+    """
+    Cria uma cadeia de conversação baseada em questões e respostas (QA), utilizando um modelo de linguagem para gerar respostas detalhadas com base em um contexto fornecido.
+
+    Retorna:
+        ConversationalRetrievalChain: Uma instância de cadeia de conversação que utiliza um modelo generativo com alta temperatura (maior criatividade nas respostas) e um template de prompt específico para estruturar as perguntas e respostas.
+    """
     prompt_template = """
     "Responda à pergunta o mais detalhadamente possível a partir do contexto fornecido, certifique-se de fornecer todos os detalhes, se a resposta não estiver no contexto fornecido, não forneça a resposta errada."\n\n
     Context:\n {context}?\n
@@ -78,13 +118,25 @@ def get_conversational_chain():
     model = ChatGoogleGenerativeAI(model="gemini-pro",
                              temperature=0.9)
 
-    prompt = PromptTemplate(template = prompt_template, input_variables = ["context", "question"])
+    prompt = PromptTemplate(template=prompt_template, input_variables=["context", "question"])
     chain = load_qa_chain(model, chain_type="stuff", prompt=prompt)
     
     return chain
 
-def handle_userinput(user_question):
 
+def handle_userinput(user_question):
+    """
+    Processa a entrada do usuário utilizando uma cadeia de conversação para gerar uma resposta baseada em documentos relacionados previamente indexados.
+
+    Parâmetros:
+        user_question (str): A pergunta do usuário que será processada pela cadeia de conversação.
+
+    A função realiza as seguintes operações:
+    - Carrega o banco de dados de vetores local.
+    - Realiza uma pesquisa de similaridade para encontrar documentos relevantes à pergunta.
+    - Invoca a cadeia de conversação para obter uma resposta baseada nos documentos encontrados.
+    - Formata a pergunta e resposta e as exibe na interface do usuário utilizando templates HTML específicos.
+    """
     embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 
     new_db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
@@ -103,7 +155,6 @@ def handle_userinput(user_question):
     # Atualizar o template do bot e escrever na página
     bot_message_formatted = bot_template.replace("{{MSG}}", response["output_text"])
     st.write(bot_message_formatted, unsafe_allow_html=True)
-    #st.write(response)
     
 
     
@@ -112,16 +163,11 @@ def main():
     os.getenv("GOOGLE_API_KEY")
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
-    
     st.set_page_config(page_title="GaleroouleAi",
                        page_icon="🤖")
     st.write(css, unsafe_allow_html=True)
 
-    # if "conversation" not in st.session_state:
-    #     st.session_state.conversation = None
-    # if "chat_history" not in st.session_state:
-    #     st.session_state.chat_history = None
-    
+
 
 
 # Detecta o idioma preferido do sistema
@@ -161,10 +207,11 @@ def main():
 
             st.divider()
             st.subheader("💡 :blue[*Guide*]")
-            st.text("1️⃣ Do this")
-            st.text("2️⃣ Do this")
-            st.text("3️⃣ Do this")
-            st.text("4️⃣ Do this")
+            st.text("1️⃣ Choose the Language")
+            st.text("2️⃣ Upload the PDF(s)")
+            st.text("3️⃣ Click on 'Process'")
+            st.text("4️⃣ Ask Questions to GalerrouleAI")
+
 
             
         else:
@@ -180,8 +227,6 @@ def main():
                     text_chunks = get_text_chunks(raw_text)
                     # create vector store
                     vectorstore = get_vectorstore(text_chunks)
-
-                    # create conversation chain
 
                 st.success('This is a success message!', icon="✅")
             else: 
