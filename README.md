@@ -17,7 +17,7 @@
 
 ## Descrição <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
-O GaleroouleAi é uma aplicação inovadora que combina tecnologias de ponta em inteligência artificial para oferecer uma solução robusta e interativa em [inserir área de aplicação, por exemplo, "educação", "atendimento ao cliente", "análise de dados", etc.]. Utilizando a LLM Gemini AI da Google, integrada com o modelo de Embedding, nossa aplicação é capaz de entender e processar linguagem natural de maneira eficaz, proporcionando uma interação intuitiva e personalizada para os usuários.
+O GaleroouleAi é uma aplicação inovadora que combina tecnologias de ponta em inteligência artificial para oferecer uma solução robusta e interativa em Análise de Documentos. Utilizando a LLM Gemini AI da Google, integrada com o modelo de Embedding, nossa aplicação é capaz de entender e processar linguagem natural de maneira eficaz, proporcionando uma interação intuitiva e personalizada para os usuários.
 
 Desenvolvido com Python e Langchain, o backend do nosso aplicativo garante uma integração fluida e eficiente com as APIs do Google, permitindo que o sistema não apenas entenda, mas também responda e interaja com os usuários de maneiras contextualmente relevantes. O site do aplicativo, criado com React e estilizado com Tailwind CSS, oferece uma interface de usuário limpa e moderna, facilitando a navegação e melhorando a experiência do usuário.
 
@@ -58,6 +58,46 @@ A arquitetura Retrieval-Augmented Generation (RAG) no projeto utiliza recuperaç
 
 ***
 ## Funcionalidades <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+Algumas funcionalidades:
+
+- **Analisar**
+  > Permite a interpretação e avaliação de dados contidos em documentos PDF, utilizando técnicas de inteligência artificial para gerar insights e recomendações detalhadas.
+
+- **Extrair**
+  > Automatiza a extração de informações específicas de documentos PDF, como textos, tabelas e imagens, facilitando o processamento e a análise de grandes volumes de dados.
+
+- **Sumarizar**
+  > Cria resumos concisos de documentos extensos, destacando os principais pontos e informações relevantes, permitindo uma rápida compreensão do conteúdo essencial.
+
+- **Buscar**
+  > Oferece a capacidade de realizar buscas rápidas e eficientes por palavras-chave ou frases específicas dentro de um ou mais documentos PDF, otimizando a localização de informações.
+
+- **Classificar**
+  > Utiliza algoritmos de inteligência artificial para categorizar automaticamente documentos PDF de acordo com critérios predefinidos, melhorando a organização e a gestão de arquivos.
+
+- **Converter**
+  > Converte documentos PDF para diferentes formatos, como Word, Excel ou imagens, mantendo a fidelidade do layout original e facilitando a edição e o compartilhamento.
+
+- **Validar**
+  > Verifica a precisão e a integridade das informações contidas em documentos PDF, assegurando que os dados sejam consistentes e confiáveis para uso profissional ou legal.
+
+- **Comparar**
+  > Compara o conteúdo de dois ou mais documentos PDF, identificando diferenças e semelhanças, útil para revisões de versões ou controle de qualidade documental.
+
+- **Organizar**
+  > Auxilia na ordenação e no arquivo de documentos PDF, usando critérios como data, relevância ou temática, simplificando a gestão documental e o acesso rápido a arquivos.
+
+- **Traduzir**
+  > Traduz textos contidos em documentos PDF para diversos idiomas, facilitando a compreensão e a colaboração em ambientes multilíngues.
+
+- **Segmentar**
+  > Divide documentos PDF em seções ou capítulos menores, baseando-se em cabeçalhos ou marcadores, o que facilita a navegação e o estudo de partes específicas do documento.
+
+- **Marcar**
+  > Permite a adição de anotações, comentários e destaques em documentos PDF, ideal para revisões colaborativas e anotações de estudo.
+
+- **Visualizar**
+  > Oferece uma interface visual para a exibição de documentos PDF, com recursos avançados de zoom, rotação e ajuste de visualização, melhorando a experiência de leitura.
 
 ***
 ## Como Rodar o Projeto <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
