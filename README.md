@@ -10,7 +10,7 @@
 <img src="https://github.com/JuniorTorresMTJ/GaleroouleAi/blob/main/front/src/assets/site.png" min-width="300px" max-width="200px" width="600px" > 
 </p>
 <p align= "center">
-<img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" />  https://juniortorresmtj.github.io/GaleroouleAi/ <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+<img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" />  https://juniortorresmtj.github.io/GaleroouleAI-web/ <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
   </p>
   
 ***
