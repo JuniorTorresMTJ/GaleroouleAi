@@ -7,7 +7,7 @@ css = '''
     background-color: #2b313e
 }
 .chat-message.bot {
-    background-color: #0E1117
+    background-color: #2b313e
     flex-direction: row-reverse;
 }
 .chat-message .avatar {
