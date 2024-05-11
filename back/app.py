@@ -201,7 +201,7 @@ def main():
                     text_chunks = get_text_chunks(raw_text)
 
                     # create vector store
-                    vectorstore, vectors = get_vectorstore(text_chunks)
+                    vectorstore = get_vectorstore(text_chunks)
 
             st.divider()
             st.subheader("💡 :blue[*Guide*]")
