@@ -4,7 +4,7 @@
 <img src="https://github.com/JuniorTorresMTJ/GaleroouleAi/blob/main/front/src/assets/nome.png" min-width="300px" max-width="200px" width="400px" > 
 </p>
 
-## Site do Projeto <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+## Project Website <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
 <p align= "center">
 <img src="https://github.com/JuniorTorresMTJ/GaleroouleAi/blob/main/front/src/assets/site.png" min-width="300px" max-width="200px" width="600px" > 
@@ -15,109 +15,112 @@
   
 ***
 
-## Descrição <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+## Description <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
-O GaleroouleAi é uma aplicação inovadora que combina tecnologias de ponta em inteligência artificial para oferecer uma solução robusta e interativa em Análise de Documentos. Utilizando a LLM Gemini AI da Google, integrada com o modelo de Embedding, nossa aplicação é capaz de entender e processar linguagem natural de maneira eficaz, proporcionando uma interação intuitiva e personalizada para os usuários.
+GaleroouleAi is an innovative application that combines cutting-edge artificial intelligence technologies to offer a robust and interactive solution in Document Analysis. Using Google's Gemini AI LLM, integrated with the Embedding model, our application is capable of effectively understanding and processing natural language, providing an intuitive and personalized interaction for users.
 
-Desenvolvido com Python e Langchain, o backend do nosso aplicativo garante uma integração fluida e eficiente com as APIs do Google, permitindo que o sistema não apenas entenda, mas também responda e interaja com os usuários de maneiras contextualmente relevantes. O site do aplicativo, criado com React e estilizado com Tailwind CSS, oferece uma interface de usuário limpa e moderna, facilitando a navegação e melhorando a experiência do usuário.
+Developed with Python and Langchain, the backend of our application ensures a smooth and efficient integration with Google APIs, allowing the system not only to understand but also to respond and interact with users in contextually relevant ways. The application's website, created with React and styled with Tailwind CSS, offers a clean and modern user interface, making navigation easier and enhancing user experience.
 
-O GaleroouleAi é projetado para ser escalável e seguro, atendendo às necessidades tanto de pequenas empresas quanto de grandes corporações que buscam melhorar a interação digital com seus clientes. Seja automatizando respostas, oferecendo suporte personalizado ou analisando grandes volumes de texto, nosso aplicativo se destaca por sua precisão, velocidade e facilidade de uso.
+GaleroouleAi is designed to be scalable and secure, meeting the needs of both small businesses and large corporations seeking to improve digital interaction with their customers. Whether automating responses, providing personalized support, or analyzing large volumes of text, our application stands out for its accuracy, speed, and ease of use.
+
 ***
-## Problema <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+## Problem <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
-Em um mundo cada vez mais digitalizado, empresas e organizações enfrentam o desafio contínuo de processar grandes volumes de dados de texto, o que exige uma quantidade significativa de recursos humanos e tempo. Além disso, a necessidade de oferecer atendimento ao cliente personalizado e em tempo real se tornou uma expectativa padrão dos consumidores. No entanto, muitas soluções existentes não conseguem escalar eficientemente ou manter um alto nível de personalização e precisão no processamento da linguagem natural.
+In an increasingly digitized world, businesses and organizations face the ongoing challenge of processing large volumes of text data, which requires a significant amount of human resources and time. Moreover, the need to offer personalized and real-time customer service has become a standard expectation of consumers. However, many existing solutions fail to scale efficiently or maintain a high level of personalization and accuracy in natural language processing.
 
-A falta de capacidade para analisar, entender e responder a consultas em linguagem natural de forma rápida e eficiente pode levar a uma experiência de usuário frustrante, reduzindo a satisfação do cliente e impactando negativamente a reputação e a eficiência operacional das empresas. Além disso, muitos sistemas carecem da flexibilidade para se adaptar a diferentes contextos ou integrar-se de maneira suave com infraestruturas existentes, criando barreiras adicionais para a implementação efetiva de soluções de IA.
+The inability to analyze, understand, and respond to natural language queries quickly and efficiently can lead to a frustrating user experience, reducing customer satisfaction and negatively impacting the reputation and operational efficiency of businesses. Additionally, many systems lack the flexibility to adapt to different contexts or integrate seamlessly with existing infrastructures, creating additional barriers to the effective implementation of AI solutions.
 
 ***
 ## GaleroouleAI? <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
-O nome "GaleroouleAI" é um portmanteau, uma combinação das palavras "Google" e "Alura". Isso significa que o nome foi criado ao mesclar partes dessas duas palavras, refletindo a inspiração ou a colaboração entre as duas entidades ou conceitos representados por elas. No contexto de um projeto ou produto, isso sugere que a tecnologia ou metodologia usada pode ter sido influenciada ou apoiada pelas capacidades e ferramentas do Google, bem como pelos recursos educacionais ou de desenvolvimento da Alura. Esse tipo de nome ajuda a transmitir a essência da colaboração ou da fusão de ideias e tecnologias de ambas as origens.
+The name "GaleroouleAI" is a portmanteau, a combination of the words "Google" and "Alura." This means that the name was created by merging parts of these two words, reflecting the inspiration or collaboration between the two entities or concepts represented by them. In the context of a project or product, this suggests that the technology or methodology used may have been influenced or supported by the capabilities and tools of Google, as well as the educational or development resources of Alura. This type of name helps to convey the essence of the collaboration or the fusion of ideas and technologies from both origins.
 
 <p align= "center">
 <img src="https://media2.giphy.com/media/jY1r8EHyk4Ye9KUOUb/giphy.gif" min-width="300px" max-width="200px" width="100px" > 
 </p>
 
 ***
-## Arquitetura <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
-A arquitetura Retrieval-Augmented Generation (RAG) no projeto utiliza recuperação de documentos e geração de texto para respostas precisas. Usando o modelo de Embedding da Google para encontrar informações e a Gemini AI para gerar respostas, o sistema melhora a precisão e eficiência. Python e Langchain facilitam a integração, enquanto React e Tailwind melhoram a interface do usuário.
-
+## Architecture <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+The Retrieval-Augmented Generation (RAG) architecture in the project uses document retrieval and text generation for accurate responses. Using Google's Embedding model to find information and Gemini AI to generate responses, the system improves accuracy and efficiency. Python and Langchain facilitate integration, while React and Tailwind enhance the user interface.
 
 ## Tecnologias Utilizadas <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
-- **Gemini AI**: Descreva como você usa a LLM da Google no seu projeto.
-- **Google Embedding Model**: Explique a utilidade do modelo de embedding no contexto do seu aplicativo.
-- **Google API**: Mencione as APIs do Google que são integradas.
-- **Python**: Fale sobre como Python é usado no backend ou no processamento de dados.
-- **Langchain**: Descreva a integração com Langchain e seu papel no projeto.
-- **React**: Detalhe como o React é usado para construir a interface do usuário.
-- **Tailwind CSS**: Explique como o Tailwind é utilizado para o design do frontend.
+- **Gemini AI**: Describe how you use Google's LLM in your project.
+- **Google Embedding Model**: Explain the utility of the embedding model in the context of your application.
+- **Google API**: Mention the Google APIs that are integrated.
+- **Python**: Talk about how Python is used in the backend or data processing.
+- **Langchain**: Describe the integration with Langchain and its role in the project.
+- **React**: Detail how React is used to build the user interface.
+- **Tailwind CSS**: Explain how Tailwind is used for frontend design.
 
 <p align= "center">
 <img src="https://media2.giphy.com/media/L8INOStdmfSw0gWjJI/giphy.gif" min-width="300px" max-width="200px" width="100px" > 
 </p>
 
 ***
-## Funcionalidades <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
-Algumas funcionalidades:
+## Features <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
 
-- **Analisar**
-  > Permite a interpretação e avaliação de dados contidos em documentos PDF, utilizando técnicas de inteligência artificial para gerar insights e recomendações detalhadas.
+Some functionalities:
 
-- **Extrair**
-  > Automatiza a extração de informações específicas de documentos PDF, como textos, tabelas e imagens, facilitando o processamento e a análise de grandes volumes de dados.
+- **Analyze**
+  > Allows the interpretation and evaluation of data contained in PDF documents, using artificial intelligence techniques to generate detailed insights and recommendations.
 
-- **Sumarizar**
-  > Cria resumos concisos de documentos extensos, destacando os principais pontos e informações relevantes, permitindo uma rápida compreensão do conteúdo essencial.
+- **Extract**
+  > Automates the extraction of specific information from PDF documents, such as texts, tables, and images, facilitating the processing and analysis of large volumes of data.
 
-- **Buscar**
-  > Oferece a capacidade de realizar buscas rápidas e eficientes por palavras-chave ou frases específicas dentro de um ou mais documentos PDF, otimizando a localização de informações.
+- **Summarize**
+  > Creates concise summaries of extensive documents, highlighting the main points and relevant information, allowing for a quick understanding of the essential content.
 
-- **Classificar**
-  > Utiliza algoritmos de inteligência artificial para categorizar automaticamente documentos PDF de acordo com critérios predefinidos, melhorando a organização e a gestão de arquivos.
+- **Search**
+  > Provides the ability to perform quick and efficient searches for specific keywords or phrases within one or more PDF documents, optimizing the location of information.
 
-- **Converter**
-  > Converte documentos PDF para diferentes formatos, como Word, Excel ou imagens, mantendo a fidelidade do layout original e facilitando a edição e o compartilhamento.
+- **Classify**
+  > Uses artificial intelligence algorithms to automatically categorize PDF documents according to predefined criteria, improving the organization and management of files.
 
-- **Validar**
-  > Verifica a precisão e a integridade das informações contidas em documentos PDF, assegurando que os dados sejam consistentes e confiáveis para uso profissional ou legal.
+- **Convert**
+  > Converts PDF documents to different formats, such as Word, Excel, or images, maintaining the fidelity of the original layout and facilitating editing and sharing.
 
-- **Comparar**
-  > Compara o conteúdo de dois ou mais documentos PDF, identificando diferenças e semelhanças, útil para revisões de versões ou controle de qualidade documental.
+- **Validate**
+  > Verifies the accuracy and integrity of information contained in PDF documents, ensuring that the data are consistent and reliable for professional or legal use.
 
-- **Organizar**
-  > Auxilia na ordenação e no arquivo de documentos PDF, usando critérios como data, relevância ou temática, simplificando a gestão documental e o acesso rápido a arquivos.
+- **Compare**
+  > Compares the content of two or more PDF documents, identifying differences and similarities, useful for version reviews or document quality control.
 
-- **Traduzir**
-  > Traduz textos contidos em documentos PDF para diversos idiomas, facilitando a compreensão e a colaboração em ambientes multilíngues.
+- **Organize**
+  > Assists in the ordering and filing of PDF documents, using criteria such as date, relevance, or theme, simplifying document management and quick access to files.
 
-- **Segmentar**
-  > Divide documentos PDF em seções ou capítulos menores, baseando-se em cabeçalhos ou marcadores, o que facilita a navegação e o estudo de partes específicas do documento.
+- **Translate**
+  > Translates texts contained in PDF documents into various languages
+  
+- **Segment**
+  > Divides PDF documents into smaller sections or chapters based on headers or markers, which facilitates navigation and the study of specific parts of the document.
 
-- **Marcar**
-  > Permite a adição de anotações, comentários e destaques em documentos PDF, ideal para revisões colaborativas e anotações de estudo.
+- **Mark**
+  > Allows the addition of annotations, comments, and highlights to PDF documents, ideal for collaborative reviews and study notes.
 
-- **Visualizar**
-  > Oferece uma interface visual para a exibição de documentos PDF, com recursos avançados de zoom, rotação e ajuste de visualização, melhorando a experiência de leitura.
+- **Visualize**
+  > Offers a visual interface for viewing PDF documents, with advanced features for zoom, rotation, and viewing adjustment, improving the reading experience.
 
-***
-## Como Rodar o Projeto <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
-Instruções passo a passo sobre como instalar e executar o projeto localmente.
+## How to Run the Project
 
-### Instalação <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+### Installation <img width="30px" src="https://media2.giphy.com/media/9yRMxLuRqyQ0x3jJXD/giphy.gif" /> 
+
 ```bash
-
-# Comandos para clonar o repositório e instalar dependências
-git clone [URL do repositório]
-cd [Nome do Diretório]
+# Commands to clone the repository and install dependencies
+git clone [Repository URL]
+cd [Directory Name]
 npm install
 pip install -r requirements.txt
 
+```
+***
 
-### Execução
-# Comando para rodar o frontend
+### Execution
+
+```bash
+# Command to run the frontend
 npm start
 
-# Comando para rodar o backend/API
+# Command to run the backend/API
 python app.py
 ```
 <p align= "center">
