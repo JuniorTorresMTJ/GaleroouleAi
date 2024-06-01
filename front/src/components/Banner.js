@@ -36,35 +36,35 @@ const Banner = () => {
                 </a> */}
               </div>
               <div className=" mb-3 text-white font-primary text-[32px] lg:text-4xl ">
-                Use nossa Inteligência Artificial para:
+                Use our Artificial Intelligence to:
               </div>
               <TypeAnimation
                 sequence={[
-                  "Analisar",
+                  "Analyze",
                   2000,
-                  "Extrair",
+                  "Extract",
                   2000,
-                  "Sumarizar",
+                  "Summarize",
                   2000,
-                  "Buscar",
+                  "Search",
                   2000,
-                  "Classificar",
+                  "Classify",
                   2000,
-                  "Converter",
+                  "Convert",
                   2000,
-                  "Validar",
+                  "Validate",
                   2000,
-                  "Comparar",
+                  "Compare",
                   2000,
-                  "Organizar",
+                  "Organize",
                   2000,
-                  "Traduzir",
+                  "Translate",
                   2000,
-                  "Segmentar",
+                  "Segment",
                   2000,
-                  "Marcar",
+                  "Tag",
                   2000,
-                  "Visualizar",
+                  "Visualize",
                   2000,
                 ]}
                 speed={50}
@@ -80,10 +80,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className=" mb-6 max-w-[390px] mx-auto lg:mx-0 lg:max-w-[720px] p-2"
             >
-              Bem-vindo à nossa IA! Explore uma ferramenta inovadora que
-              transforma sua interação com documentos PDF. Conheça nossos
-              serviços únicos que têm revolucionado o acesso e a análise de
-              informações. Experimente a inovação ao seu alcance!
+              Welcome to our AI! Explore an innovative tool that transforms your interaction with PDF documents. Discover our unique services that have revolutionized access and analysis of information. Experience innovation at your fingertips!
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}
@@ -99,7 +96,7 @@ const Banner = () => {
               >
                 <button className="btn btn-lg rounded-lg  max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                    Conhecer
+                    Learn More
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
@@ -111,7 +108,7 @@ const Banner = () => {
                 spy={true}
                 smooth={true}
               >
-                Nossos Serviços
+                Our Services
               </Link>
             </motion.div>
           </div>

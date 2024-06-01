@@ -27,15 +27,15 @@ const About = () => {
             className="flex-1"
           >
             <h2 className=" h2  text-accent font-semibold">
-              Sobre nós<span className="text-white ml-0 pl-0">_</span>
+              About Us<span className="text-white ml-0 pl-0">_</span>
             </h2>
             <h3 className=" h3-responsive mb-1 lg:h3">
-              Somos uma IA que facilitará a sua vida e de sua empresa!
+              We are an AI that will make your life and your company's life easier!
             </h3>
             <p className="mb-6 text-lg lg:font-secondary lg:leading-8 ">
-              Possuímos expertise em diversos domínios, incluindo Inteligência
-              Artificial, Ciência de Dados, MLOps, Modelos de Linguagem de
-              Grande Escala (LLM), Análise de Dados, entre outros!
+              We have expertise in various domains, including Artificial
+              Intelligence, Data Science, MLOps, Large Language Models (LLM),
+              Data Analysis, among others!
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-4 lg:mb-12 lg:justify-center h-fit">
               <div>
@@ -43,8 +43,8 @@ const About = () => {
                   +{inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px] py-2">
-                  Anos de <br />
-                  Experiência
+                  Years of <br />
+                  Experience
                 </div>
               </div>
               <div>
@@ -53,7 +53,7 @@ const About = () => {
                   {inView ? <CountUp start={0} end={100} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]  py-2">
-                  Milhões de Receita <br />
+                  Millions in Revenue <br />
                 </div>
               </div>
               <div>
@@ -61,7 +61,7 @@ const About = () => {
                   +{inView ? <CountUp start={0} end={4} duration={3} /> : null}
                 </div>
                 <div className="font-primary text-sm tracking-[2px]  py-2">
-                  Empresas
+                  Companies
                   <br />
                 </div>
               </div>
@@ -70,7 +70,7 @@ const About = () => {
             <a href="https://galeroouleai.streamlit.app" target="_blank" rel="noopener noreferrer">
                 <button className="btn btn-lg rounded-lg  max-w-[170px] animate-ping px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
                   <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                    Usar IA
+                    Use AI
                   </span>
                   <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
                 </button>
@@ -85,19 +85,21 @@ const About = () => {
             className="flex-1 flex-col lg:space-y-5 "
           >
             <div className="flex flex-row items-center lg:h-[163px] h-[240px] py-2 lg:py-5 hover:bg-gradient-to-br from-white/[0.1] via-[#484848]/[0.2] to-stone-950 bg-opacity-10 rounded-2xl shadow">
-              <div className="w-20 h-16 bg-[#034460] bg-opacity-50 text-[30px] rounded-2xl flex items-center justify-center m-4 px-5 text-[#61DAFB] hover:text-white">
+              <div className="w-20 h-16 bg-[#034460] bg-opacity-50 text-[
+
+30px] rounded-2xl flex items-center justify-center m-4 px-5 text-[#61DAFB] hover:text-white">
                 <HiStar />
               </div>
 
               <div className="mr-5">
                 <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">
-                  Eficiência Operacional
+                  Operational Efficiency
                 </div>
                 <div className=" text-white text-opacity-70 text-base font-normal">
-                  A IA aumenta a produtividade ao automatizar tarefas e
-                  processos repetitivos, reduzindo erros e liberando tempo para
-                  atividades de maior valor agregado. Isso se traduz em
-                  operações mais rápidas e eficientes em diversos setores.
+                  AI increases productivity by automating repetitive tasks and
+                  processes, reducing errors and freeing up time for higher
+                  value-added activities. This translates to faster and more
+                  efficient operations across various sectors.
                 </div>
               </div>
             </div>
@@ -108,14 +110,10 @@ const About = () => {
 
               <div className="mr-5">
                 <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">
-                  Personalização e Experiência do Usuário
+                  Personalization and User Experience
                 </div>
                 <div className=" text-white text-opacity-70 text-base font-normal">
-                  Utilizando análise de comportamento, a IA personaliza
-                  recomendações e serviços, melhorando significativamente a
-                  experiência do usuário. Isso não só aumenta a satisfação e
-                  fidelidade do cliente, como também impulsiona vendas e
-                  engajamento.
+                  Using behavior analysis, AI personalizes recommendations and services, significantly enhancing the user experience. This not only increases customer satisfaction and loyalty but also drives sales and engagement.
                 </div>
               </div>
             </div>
@@ -126,13 +124,10 @@ const About = () => {
 
               <div className="mr-5">
                 <div className="text-white text-lg font-semibold capitalize leading-normal tracking-tight ">
-                  Insights e Tomada de Decisão Aprimorada
+                  Insights and Enhanced Decision-Making
                 </div>
                 <div className="text-white text-opacity-70 text-base font-normal">
-                  Com a capacidade de processar e analisar grandes volumes de
-                  dados, a IA oferece insights profundos que apoiam decisões
-                  estratégicas, ajudando empresas a antecipar tendências e
-                  otimizar operações com base em informações precisas.
+                  With the ability to process and analyze large volumes of data, AI provides deep insights that support strategic decisions, helping businesses anticipate trends and optimize operations based on accurate information.
                 </div>
               </div>
             </div>

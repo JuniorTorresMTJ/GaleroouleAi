@@ -36,7 +36,7 @@ const Nav = () => {
             </Link>
           </Tooltip>
           <Tooltip
-            content="Sobre Nós"
+            content="About Us"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -55,7 +55,7 @@ const Nav = () => {
           </Link>
           </Tooltip>
           <Tooltip
-            content="Serviços"
+            content="Services"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -72,7 +72,7 @@ const Nav = () => {
           </Link>
           </Tooltip>
           <Tooltip
-            content="Tecnologias"
+            content="Tecnologies"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -89,7 +89,7 @@ const Nav = () => {
           </Link>
           </Tooltip>
           <Tooltip
-            content="Equipe"
+            content="Team"
             placement="left"
             trigger="hover"
             animation="duration-500"
@@ -106,7 +106,7 @@ const Nav = () => {
           </Link>
           </Tooltip>
           <Tooltip
-            content="Contatos"
+            content="Contact"
             placement="left"
             trigger="hover"
             animation="duration-500"

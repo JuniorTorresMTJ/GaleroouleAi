@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
 
     if (!email.trim() || !name.trim() || !message.trim()) {
-      alert("Por favor, preencha todos os campos.");
+      alert("Please fill out all fields.");
       return;
     }
 
@@ -47,7 +47,6 @@ const Contact = () => {
   return (
     <div
       className=" h-max section mb-20 lg:mb-4 lg:h-full lg:bg-contact lg:bg-contain lg:bg-left-bottom lg:bg-no-repeat lg:mix-blend-lighten"
-      
     >
       <div id="contact" className="container mx-auto pt-8 pb-32 lg:py-8 lg:px-16 text-center xl:text-left flex items-center justify-center lg:justify-end lg:h-full">
         <div className="flex flex-col lg:w-full max-w-[700px]">
@@ -58,9 +57,9 @@ const Contact = () => {
             exit="hidden"
             className="h2 text-center font-semibold  mb-12 leading-tight"
           >
-            Vamos{" "}
+            Let's{" "}
             <span className=" text-accent">
-              conversar<span className="text-white ml-0 pl-0">_</span>
+              talk<span className="text-white ml-0 pl-0">_</span>
             </span>
           </motion.h2>
           <motion.form
@@ -106,7 +105,7 @@ const Contact = () => {
               className="btn btn-lg rounded-lg max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
             >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Enviar
+                Send
               </span>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
             </button>
